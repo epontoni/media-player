@@ -24,6 +24,7 @@ self.addEventListener('fetch', event => {
 async function precache(){
     const cache = await caches.open(VERSION)
     return cache.addAll([
+        /*
         '/',
         '/index.html',
         '/assets/favicon.ico',
@@ -33,6 +34,7 @@ async function precache(){
         '/assets/plugins/AutoPause.js',
         '/assets/index.css',
         '/assets/BigBuckBunny_512kb.mp4',
+        */
     ]);
 }
 
